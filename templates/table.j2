@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"  />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"   />
+        <title>Document</title>
+        <link rel="stylesheet" href="/static/table.css" />
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>Number of Dices</th>
+                <th>Dice Type</th>
+                <th>Results</th>
+            </tr>
+            {% for result in data %}
+                <tr>
+                    <td>{{ result[0] }}</td>
+                    <td>{{ result[1] }}</td>
+                    <td>{{ result[2] }}</td>
+                    <td>{{ result[3] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/dice_roll.css" />
+</head>
+  <body>
+    <hi>Welcome to the dice simulator program</hi>
+    <form action="http://localhost:5000/" method="POST">
+        <div class="form__fieldset"
+            <label for="Username" class-="form__label">Username:</label>
+            <input type="username" name="username" id="username" class="form__input" /> 
+        </div>
+
+        <div class="form__fieldset">
+            <label for="number_of_dices" class="form__label">Number of dices:</label>
+            <select name="number_of_dices" id="number_of_dices" class="form__input form__select">
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+            </select>
+        </div>
+
+        <div class="form__fieldset">
+            <label for="dice_type" class="form__label">Dice type:</label>
+            <select name="dice_type" id="dice_type" class="form__input form__select">
+             <option value="4">4 sides</option>
+             <option value="6">6 sides</option>
+             <option value="8">8 sides</option>
+             <option value="10">10 sides</option>
+             <option value="12">12 sides</option>
+             <option value="20">20 sides</option>
+            </select>
+        </div>
+        <div class="form__fieldset">
+            <input class="form__submit form__input" type="submit" value="Submit"
+        </div>
+    </form>
+    </body>
+</html> 
