@@ -11,7 +11,7 @@ body {
 
 .form__fieldset {
     padding: 40px 20px;
-    color:#ff6666;
+    color:#fa7b7b;
 }
 
 .form__fieldset:not(:last-of-type) {
