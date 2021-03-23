@@ -13,7 +13,7 @@ def home():
     if request.method == "POST":
         print(request.form)
         results = []
-        for dice in range(1, int(request.form.get("number_of_dices"))):
+        for dice in range(0, int(request.form.get("number_of_dices"))):
             results.append(random.randint(1, int(request.form.get("dice_type"))))
         with connection:
             with connection.cursor() as cursor:
