@@ -11,14 +11,6 @@ In order to run this container you'll need docker installed.
 
 #### Mandatory environment variables
 
-Run the following commands:
+Run the following command:
 
-> docker run -e DICE_ROLL_DB_USERNAME="username" 
->
-> docker run -e DICE_ROLL_DB_PASSWORD="password" 
->
-> docker run -e DICE_ROLL_DB_HOSTNAME="hostname" 
->
-> docker run -e DICE_ROLL_DB_PORT="port" 
->
-> docker run -e DICE_ROLL_DB_NAME="database-name" --rm -p 5000:5000 dice-roll
+> docker run -e DICE_ROLL_DB_USERNAME="username" -e DICE_ROLL_DB_PASSWORD="password" -e DICE_ROLL_DB_HOSTNAME="hostname" -e DICE_ROLL_DB_PORT="port" -e DICE_ROLL_DB_NAME="database-name" --rm -p 5000:5000 dice-roll
