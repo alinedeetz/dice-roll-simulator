@@ -1,10 +1,24 @@
 from flask import Flask, render_template, request, redirect
 import psycopg2
-import random 
+import random
+import os
+
+print(os.environ)
 
 app = Flask (__name__)
 dice_roll = []
-POSTGRESQL_URI = "postgres://llnueiav:4b41FBBKPhnJrv75U0z4yW1_tehDMfqR@tuffi.db.elephantsql.com:5432/llnueiav"
+DB_USERNAME = os.environ["DICE_ROLL_DB_USERNAME"]
+DB_PASSWORD = os.environ["DICE_ROLL_DB_PASSWORD"]
+DB_HOSTNAME = os.environ["DICE_ROLL_DB_HOSTNAME"]
+DB_PORT = os.environ["DICE_ROLL_DB_PORT"]
+DB_NAME = os.environ["DICE_ROLL_DB_NAME"]
+POSTGRESQL_URI = "postgres://{}:{}@{}:{}/{}".format(
+    DB_USERNAME,
+    DB_PASSWORD,
+    DB_HOSTNAME,
+    DB_PORT,
+    DB_NAME
+)
 
 connection = psycopg2.connect(POSTGRESQL_URI)
 
