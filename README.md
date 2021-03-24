@@ -6,11 +6,12 @@ A Python based dice roller that can roll dices from 4 to 20 sides. The results a
 
 ## How to run
 
-#### DockerHub
+### DockerHub
 In order to run this container you'll need docker installed.
 
 #### Mandatory environment variables
 
+Run the following commands:
 
 > docker run -e DICE_ROLL_DB_USERNAME="username" 
 >
