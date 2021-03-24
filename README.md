@@ -13,7 +13,11 @@ In order to run this container you'll need docker installed.
 
 
 > docker run -e DICE_ROLL_DB_USERNAME="username" 
+>
 > docker run -e DICE_ROLL_DB_PASSWORD="password" 
+>
 > docker run -e DICE_ROLL_DB_HOSTNAME="hostname" 
+>
 > docker run -e DICE_ROLL_DB_PORT="port" 
+>
 > docker run -e DICE_ROLL_DB_NAME="database-name" --rm -p 5000:5000 dice-roll
