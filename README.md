@@ -13,4 +13,4 @@ In order to run this container you'll need docker installed.
 
 Run the following command:
 
->$ docker run -e DICE_ROLL_DB_USERNAME="username" -e DICE_ROLL_DB_PASSWORD="password" -e DICE_ROLL_DB_HOSTNAME="hostname" -e DICE_ROLL_DB_PORT="port" -e DICE_ROLL_DB_NAME="database-name" --rm -p 5000:5000 dice-roll
+>$ docker run -e DICE_ROLL_DB_USERNAME="username" -e DICE_ROLL_DB_PASSWORD="password" -e DICE_ROLL_DB_HOSTNAME="hostname" -e DICE_ROLL_DB_PORT="port" -e DICE_ROLL_DB_NAME="database-name" --rm -p 5000:5000 alineem/dice-roll
